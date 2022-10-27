@@ -1,0 +1,316 @@
+// container
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-right: 12px;
+    padding-left: 12px;
+    @include pad{
+        max-width: 720px;
+    }
+}
+
+.container-md{
+    // for contact
+    max-width: 636px;
+    margin: 0 auto;
+}
+
+.md-container-md{
+    // for md-contact
+    @include pad{
+        max-width: 576px;
+        margin: 0 auto;
+    }
+}
+
+.md-container-sm{
+    // for md-series
+    @include pad{
+        max-width: 336px;
+        margin: 0 auto;
+    }
+}
+
+.sm-container-sm{
+    // for sm-series、sm-frame、sm-recommed、sm-contact
+    @include phone{
+        max-width: 348px;
+        margin: 0 auto;
+    }
+}
+
+// pd
+.p-0{
+    padding: 0;
+}
+
+.md-p-0{
+    @include pad{
+        padding: 0;
+    }
+}
+
+.sm-p-0{
+    @include phone{
+        padding: 0;
+    }
+}
+
+// align
+.m0-auto{
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+// text
+
+
+.text-primary{
+    color: $primary;
+}
+
+.text-secondary{
+    color: $secondary;
+}
+
+.text-black{
+    color: black;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-dark-gray{
+    color: $color-dark-gray;
+}
+
+.td-none{
+    text-decoration: none;
+}
+
+//border
+
+.border{
+    border:1px solid;
+}
+
+.border-white{
+    border-color: white;
+}
+
+.border-none{
+    border: none;
+}
+
+//background
+
+.bg-white{
+    background: #fff;
+}
+
+.bg-primary{
+    background: $primary;   
+}
+
+.bg-gray{
+    background: $color-gray;
+}
+
+//display
+
+.d-block{
+    display: block;
+}
+.d-inline-block{
+    display: inline-block;
+}
+
+.d-none{
+    display: none;
+}
+
+//flex
+
+.d-flex{
+    display: flex;
+}
+
+.flex-col{
+   flex-direction: column; 
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-end{
+    justify-content: flex-end;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.md-flex-wrap{
+    @include pad{
+        flex-wrap: wrap;
+    }
+}
+
+.sm-d-flex{
+    @include phone{
+        display: flex;
+    }
+}
+
+.sm-flex-wrap{
+    @include phone{
+        flex-wrap: wrap;
+    }
+}
+
+// sm-display
+
+.sm-display-block{
+    @include phone{
+        display: block;
+    }
+}
+
+.sm-display-inline-block{
+    @include phone{
+        display: inline-block;
+    }
+}
+
+.sm-display-none{
+    @include phone{
+        display: none;
+    }
+}
+
+// material-icons
+
+.material-icons-outlined {
+    font-family: 'Material Icons Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+    &.md-white{
+      color: white;
+    }
+    &.md-40{
+      font-size: 40px;
+    }
+    &.md-48{
+        font-size: 48px;
+    }
+    &.sm-md-24{
+        @include phone{
+            font-size: 24px;
+        }
+    }
+}
+
+//input style
+
+.checkbox{
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000;
+    vertical-align: top;
+    margin-right: 8px;
+    // margin-bottom: 48px;
+    border-radius: 3px;
+    &:checked::after{
+        content: "✓";
+        color: red;
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 12px;
+        position: absolute;
+    }
+}
+
+//hover
+
+.brightness-hover:hover{
+    filter: brightness(0.8);
+}
+
+// wd
+
+.w-full{
+    width: 100%;
+}
+.w-50{
+    width: 50%;
+}
+
+.md-w-50{
+    width: 50%;   
+}
+
+.md-w-full{
+    @include pad{
+        width: 100%;
+    }
+}
+
+.sm-w-full{
+    @include phone{
+        width: 100%;
+    }
+}
+
+.sm-w-50{
+    width: 50%;
+}
+// position
+
+.pos-relative{
+    position: relative;
+}
+
+.sm-pos-sticky{
+    @include phone{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+}
