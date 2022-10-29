@@ -1,0 +1,32 @@
+.banner__img{
+    object-fit: cover;
+}
+.banner{
+    position: relative;
+}
+.banner__list{
+    position: relative;
+    bottom: 80px;
+    & .card{
+        position: relative;
+        &:hover{
+            & .card:after{
+                background: yellow;
+            }
+        }
+    }
+    & .card img{
+        width: 256px;
+        height: 256px;
+        filter:blur(5px);
+    }
+    & .card::after{
+        background: $primary;
+        content: '';
+        position: absolute;
+        z-index: 1;
+        opacity: 80%;
+        width: 100%;
+        height: 256px;
+    }
+}
