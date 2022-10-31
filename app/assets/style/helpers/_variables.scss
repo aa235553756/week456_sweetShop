@@ -312,7 +312,7 @@ $paragraph-margin-bottom:   1rem !default;
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
-  md: 768px,
+  md: 768px, //768
   lg: 992px,
   xl: 1200px,
   xxl: 1400px
@@ -329,11 +329,11 @@ $grid-breakpoints: (
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-  sm: 540px,
+  sm: 540px,//540
   md: 720px,
-  lg: 964px,//960
-  xl: 1140px,//1140
-  xxl: 1320px
+  lg: 1000px,//960
+  // xl: 1140px,//1140
+  // xxl: 1320px
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -352,7 +352,7 @@ $gutters: $spacers !default;
 
 // Container padding
 
-$container-padding-x: $grid-gutter-width * .5 !default;
+$container-padding-x: 30px;//$grid-gutter-width * .5 !default;
 
 
 // Components

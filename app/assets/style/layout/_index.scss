@@ -1,12 +1,34 @@
-.banner__img{
-    object-fit: cover;
+body{
+    font-family: sans-serif;
 }
+
 .banner{
     position: relative;
+    // max-width: 940px;
+    margin: 0 auto;
+    @include media-breakpoint-down(sm){
+        padding: 0;
+    }
+    @include media-breakpoint-up(md){
+        margin-bottom: -20px;
+    }
+    &__img{
+        object-fit: cover;
+        height: 496px;
+        aspect-ratio: 1.35;
+        @include media-breakpoint-down(md){
+            height: auto;
+            aspect-ratio: unset;
+        }
+    }
 }
 .banner__list{
+    display: flex;
     position: relative;
     bottom: 80px;
+    @include media-breakpoint-down(md){
+        position: unset;
+    }
     & .card{
         position: relative;
         &:hover{
@@ -14,19 +36,146 @@
                 background: yellow;
             }
         }
+        &:nth-child(1){
+            border-right: 1px solid white;
+        }
+        &:nth-child(2){
+            border-right: 1px solid white;
+        }
     }
     & .card img{
-        width: 256px;
-        height: 256px;
+        max-width: 256px;
+        aspect-ratio: 1/1;
         filter:blur(5px);
+        transform: scale(.95);
+        object-fit: cover;
+        @include media-breakpoint-down(md){
+            min-height: 180px
+        }
     }
-    & .card::after{
-        background: $primary;
-        content: '';
-        position: absolute;
+    & .card-wrap{
         z-index: 1;
-        opacity: 80%;
+        opacity: .8;
+        position: absolute;
+        background: $primary;
         width: 100%;
-        height: 256px;
+        height: 100%;
+        & p{
+            color: white;
+            margin: 0 auto;
+            text-align: center;
+            height: 100%;
+            writing-mode: vertical-rl
+        }
+        &:hover{
+            background: $success;
+            & p{
+                color: $primary;
+                font-weight: bold;
+            }
+        }
     }
 }
+
+.quot1{
+    margin-bottom: 60px;
+    @include media-breakpoint-down(md){
+        margin-bottom: 0;
+    }
+    & .container{
+        @include media-breakpoint-down(md){
+            flex-direction: column;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            & :nth-child(3){
+                @include media-breakpoint-down(md){
+                    order: -1;
+                    padding-bottom: 60px;
+                }
+            }
+        }
+    }
+    &__wrap{
+        z-index: -1;
+        height: calc(100% - 40px);
+        top: 20px;
+        @include media-breakpoint-down(md){
+            height: 100%;
+            top: 0;
+        }
+    }
+    & :nth-child(3){
+        @include media-breakpoint-down(lg){
+            margin-left: 16px;
+        }
+        @include media-breakpoint-down(md){
+            margin-left: 0;
+        }
+    }
+    & p{
+        margin: 0;
+        writing-mode: vertical-rl;
+        height: 280px;
+        line-height: 42px;
+        @include media-breakpoint-down(lg){
+            line-height: 28px;
+            padding: 21px 0;
+            font-size: 14px;
+        }
+        @include media-breakpoint-down(md){
+            writing-mode: horizontal-tb;
+            line-height: 2;
+            height: unset;
+        }
+    }
+    &__mainImg{
+        margin-right: 40px; //40px 68 68-32=34
+        max-width: 460px;
+        @include media-breakpoint-down(md){
+            display: none;
+        }
+        &--sm{
+            display: none;
+            @include media-breakpoint-down(md){
+                display: block;
+                max-width: unset;
+                width: 100%;
+                margin: 0;
+                order: -2;
+                & img{
+                    object-fit: cover;
+                    max-height: 250px;
+                }
+            }
+        }
+        &--reverse{
+            order: 1;
+            margin-left: 42px;
+            margin-right: 0;
+        }
+    }
+    &__quotImg{
+        margin-left: 40px;
+        max-width: 89px;
+        @include media-breakpoint-down(md){
+            display: none;
+        }
+        
+    }
+    &__quotImg--sm{
+        display: none;
+        @include media-breakpoint-down(md){
+            display: block;
+        }
+        width: 100%;
+        background: white;
+        order: -2;
+        padding: 30px 0;
+        & img{
+            display: block;
+            width: 196px;
+            height: 60px;
+            margin: 0 auto;
+        }
+    }
+} 
