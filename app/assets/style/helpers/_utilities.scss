@@ -1,9 +1,12 @@
-.max-w-339px{
-    max-width: 339px;
-}
-
-.max-w-315px{
-    max-width: 315px;
+.login{
+    &__member--sm{
+        order: -2;
+    }
+    &__socialMedia{
+        @include media-breakpoint-down(md){
+            order: -1;
+        }
+    }
 }
 
 .writing-m-vl{
