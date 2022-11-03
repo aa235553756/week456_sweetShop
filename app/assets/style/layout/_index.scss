@@ -183,4 +183,21 @@ body{
         padding-top: 80px;
         padding-bottom: 80px;
     }
-} 
+}
+
+.todayFeature{
+    left: 20px;
+    & p{
+        letter-spacing: 5.5px;
+        color: white;
+        writing-mode: vertical-lr;
+        margin: 10px 6px;
+    }
+}
+
+.favorite__icon{
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 18.35px;
+}

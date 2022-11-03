@@ -13,23 +13,85 @@
   <body style="height: 10000px;"">
     <nav class="navbar navbar-expand-md navbar-light bg-white py-5">
       <div class="container-md">
+        <img src="./assets/images/dora/logo-all-dark.svg" alt="logo" class="navbar__LogoImg">
         <button class="navbar-toggler p-0 border-0" style="height: 24px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <!-- <span class="navbar-toggler-icon"></span> -->
           <img src="./assets/images/dehaze-24px.png" class="align-top" alt="">
         </button>
         <a href="index.html" class="d-md-none" style="width:115px;">
-          <img src="./assets/images/dora/logotype-sm-dark.svg" class="" alt="">
+          <img src="./assets/images/dora/logotype-sm-dark.svg" class="" alt="Logo">
         </a>
-        <a class="navbar-brand py-0 me-0" style="height:24px;" href="#">
-          <img src="./assets/images/shopping_cart.png" class="align-top" alt="">
-        </a>
+        <div class="d-flex">
+          <div class="navbar__link d-flex d-md-flex d-none">
+            <a href="index.html" class="text-decoration-none">首頁</a>
+            <a href="product.html" class="text-decoration-none">甜點</a>
+            <a href="login.html" class="text-decoration-none">登入</a>
+          </div>
+          <a class="navbar__cart py-0 me-0" style="height:24px;" href="cart.html">
+            <img src="./assets/images/shopping_cart.png" class="align-top" alt="cart_icon">
+          </a>
+        </div>
       </div>
     </nav>
 
     <%- contents %>
 
     <footer class="footer">
-      footer
+      <div class="bg-primary py-5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <!-- <div class="col-lg-1 d-lg-block d-none"></div> -->
+            <div class="col-11 col-md-6 col-lg-5">
+              <div class="d-flex align-items-center">
+                <img src="./assets/images/dora/logo-light.svg" alt="" width="40px" height="40px">
+                <p class="footer__quot text-dark mb-0 fs-3">訂閱你我的甜蜜郵件</p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-12 pt-5 pt-md-0">
+              <label for="mail" class="d-flex">
+                
+                <div class="footer__input__mailIcon">
+                  <img class="" src="./assets/images/mail-24px.png" alt="mail-icon">
+                </div>
+
+                <input placeholder="" type="mail" id="mail" class="footer__input border-0 p-0">
+                
+                <div class="footer__input__block bg-success">
+                  <a href="#">
+                    <img src="./assets/images/dora/arrow_forward-24px.png" alt="">
+                  </a>
+                </div>
+              
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container footer__info pb-5">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-12 col-lg-10">
+            <div class="d-flex justify-content-between">
+              <div class="d-flex flex-column justify-content-between">
+                <img src="../assets/images/logotype-sm-dark.svg" alt="" width="171px">
+                <ul class="footer__address ps-0 mb-0">
+                  <li class="list-unstyled"><a class="text-decoration-none" href="tel:07-1234-5678">07-1234-5678</a></li>
+                  <li class="list-unstyled"><a class="text-decoration-none" href="mailto:">sweetaste@email.com</a></li>
+                  <li class="list-unstyled"><address class="text-primary mb-0">高雄市新興區幸福路520號</address></li>
+                </ul>
+              </div>
+              <img class="d-none d-md-block" src="../assets/images/dora/text-sm.svg" alt="" height="219px">
+            </div>
+            <div class="footer__media d-md-flex align-items-end justify-content-between">
+              <ul class="ps-0 mb-4 mb-md-0 d-flex gap-2">
+                <li class="list-unstyled"><a href="#"><img src="./assets/images/ic-line@.svg" alt="line" width="32px"></a></li>
+                <li class="list-unstyled"><a href="#"><img src="./assets/images/ic-facebook.svg" alt="line" width="32px"></a></li>
+              </ul>
+              <p class="text-primary font-Times mb-0">© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>

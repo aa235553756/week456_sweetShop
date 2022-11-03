@@ -4,4 +4,74 @@
             padding: 0 30px;
         }
     }
+    &__LogoImg{
+        display: none;
+        @include media-breakpoint-up(md){
+            display: block;
+            height: 40px;
+        }
+    }
+    &__link{
+        gap: 60px;
+    }
+    &__cart{
+        margin-left: 80px;
+        @include media-breakpoint-down(md){
+            margin-left: 0;
+        }
+    }
+}
+
+.footer{
+    padding-top: 30px;
+    @include media-breakpoint-up(md){
+        padding-top: 60px;
+    }
+    &__quot{
+        margin-left: 20px;
+    }
+    &__input{
+        flex-grow: 1;
+        height: 56px;
+        // color: $primary;
+        &__mailIcon{
+            position: relative;
+            width: 52px;
+            background: white;
+            & img{
+                top: 16px;
+                right: 8px;
+                position: absolute;
+            }
+        }
+        &__block{
+            position: relative;
+            width: 64px;
+            & img{
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                top: 20px;
+                right: 24px;
+            }
+        }
+        &:focus-visible {
+            outline: none;
+        }
+    }
+    &__info{
+        padding-top: 39px;
+        @include media-breakpoint-up(md){
+            padding-top: 30px;
+        }
+    }
+    &__address{
+        padding-top: 39.5px;
+    }
+    &__media{
+        margin-top: 37px;
+        @include media-breakpoint-up(md){
+            margin-top: 30px;
+        }
+    }
 }
