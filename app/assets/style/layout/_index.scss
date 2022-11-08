@@ -186,6 +186,9 @@
 }
 
 .todayFeature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 36px;
     height: 106px;
     left: 20px;
@@ -194,7 +197,6 @@
         color: white;
         writing-mode: vertical-lr;
         margin: 0px;
-        padding: 10px 6px;
     }
 }
 
