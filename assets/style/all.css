@@ -13476,6 +13476,15 @@ input, select {
 }
 
 .todayFeature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 36px;
   height: 106px;
   left: 20px;
@@ -13488,7 +13497,6 @@ input, select {
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   margin: 0px;
-  padding: 10px 6px;
 }
 
 .favorite__icon {
