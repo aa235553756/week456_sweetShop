@@ -1,0 +1,123 @@
+---
+title: Ⓢ Sweetaste＊ | 付款
+layout: ./app/layout.ejs
+engine: ejs
+current: demo
+---
+<div class="container px-0 px-md-5">
+    <div class="row g-0 gx-md-4 justify-content-center flex-md-nowrap">
+        <div class="checkout col-12 col-md-6">
+            <div class="checkout__main bg-primary">
+                <div class="mb-5 d-flex bg-primary align-items-center justify-content-between">
+                    <h2 class="checkout__title fw-semibold text-white mb-0">付款</h2>
+                    <img class="checkout__img" src="./assets/images/dora/bar_payment.svg" alt="">
+                </div>
+                <form class="bg-primary" action="">
+                    <div class="d-flex mb-3">
+                        <label class="w-100" for="credit__card__number">
+                            <p class="fs-5 mb-2 text-dark fw-semibold">信用卡卡號</p>
+                            <div class="position-relative">
+                                <input class="input" placeholder="" type="text" id="credit__card__number">
+                                <div class="input__iconBlock--end">
+                                    <img src="./assets/images/dora/credit-card.svg" alt="credit-card" width="20px" height="16px">
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="d-flex gap-2 mb-3">
+                        <label class="w-100" for="credit__card__ownfirstName">
+                            <p class="fs-5 mb-2 text-dark fw-semibold">持卡人姓名</p>
+                            <div>
+                                <input class="input" placeholder="王" type="text" id="credit__card__ownfirstName">
+                            </div>
+                        </label>
+                        <label class="w-100" for="credit__card__ownlasttName">
+                            <p class="fs-5 mb-2 text-dark fw-semibold">&nbsp</p>
+                            <div>
+                                <input class="input" placeholder="小明" type="text" id="credit__card__ownlasttName">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="d-flex gap-2 mb-3">
+                        <label class="w-100" for="credit__card__month">
+                            <p class="fs-5 mb-2 text-dark fw-semibold">有效期限</p>
+                            <select name="credit__card__month" id="credit__card__month" class="select input">
+                                <option value="月" disabled selected>月</option>
+                                <option value="1月">01</option>
+                                <option value="1月">02</option>
+                                <option value="1月">03</option>
+                            </select>
+                        </label>
+                        <label class="w-100" for="credit__card__year">
+                            <p class="fs-5 mb-2 text-dark fw-semibold">&nbsp</p>
+                            <select name="credit__card__year" id="credit__card__year" class="select input">
+                                <option value="年" disabled selected>日</option>
+                                <option value="1990">1990</option>
+                                <option value="1990">1991</option>
+                                <option value="1990">1992</option>
+                            </select>
+                        </label>
+                    </div>
+                    <label class="w-50" for="credit__card__last-3word">
+                        <p class="fs-5 mb-2 text-dark fw-semibold">背面末三碼</p>
+                        <div>
+                            <input class="input" placeholder="123" type="text" id="credit__card__last-3word">
+                        </div>
+                    </label>
+                </form>
+            </div>
+            <a class="btn-success text-primary fw-semibold fs-3 py-3 d-block text-decoration-none text-center" href="checkout-3.html">下一步</a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-none d-md-block ">
+            <div class="checkout__side">
+                <div class="bg-dark py-3">
+                    <h2 class="fs-3 mb-0 fw-semibold text-center text-secondary">訂單摘要</h2>
+                </div>
+                <div class="checkout__summary border border-dark text-secondary">
+                    <div class="d-flex mb-2 justify-content-between">
+                        <span class="fw-light">小計</span>
+                        <span class="fw-light">NT$ 2,700</span>
+                    </div>
+                    <div class="d-flex mb-3 justify-content-between">
+                        <span class="fw-light">運費</span>
+                        <span class="fw-light">NT$ 300</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="fs-5 fw-semibold">總計</span>
+                        <span class="fs-5 fw-semibold">NT$ 3,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="bg-dark py-3">
+                    <h2 class="fs-3 mb-0 fw-semibold text-center text-secondary">購物清單</h2>
+                </div>
+                <ul class="checkout__list mb-0 border border-dark text-secondary">
+                    <li class="d-flex mb-3">
+                        <img class="checkout__list__img checkout__list__img01" src="./assets/images/dora/p-8.jpg" alt="checkout__list__img01">
+                        <div class="checkout__list__info d-flex flex-column justify-content-center">
+                            <span class="fw-light d-block">焦糖馬卡龍（2）</span>
+                            <span class="fs-5 fw-semibold d-block">NT$ 900</span>
+                        </div>
+                    </li>
+                    <li class="d-flex mb-3">
+                        <img class="checkout__list__img checkout__list__img02" src="./assets/images/dora/p-5.png" alt="checkout__list__img02">
+                        <div class="checkout__list__info d-flex flex-column justify-content-center">
+                            <span class="fw-light d-block">焦糖馬卡龍（2）</span>
+                            <span class="fs-5 fw-semibold d-block">NT$ 900</span>
+                        </div>
+                    </li>
+                    <li class="d-flex">
+                        <img class="checkout__list__img checkout__list__img03" src="./assets/images/dora/p-3.png" alt="checkout__list__img03">
+                        <div class="checkout__list__info d-flex flex-column justify-content-center">
+                            <span class="fw-light d-block">焦糖馬卡龍（2）</span>
+                            <span class="fs-5 fw-semibold d-block">NT$ 900</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

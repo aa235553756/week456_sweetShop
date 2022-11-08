@@ -1,0 +1,116 @@
+---
+title: Ⓢ Sweetaste＊ | 您的購物車
+layout: ./app/layout.ejs
+engine: ejs
+current: cart
+---
+
+<div class="cart container px-0 px-md-5 pt-md-5 pt-0">
+    <div class="row g-0 g-md-4">
+        <div class="cart__main col-12 col-md-8">
+            <div class="cart__title py-3 bg-dark">
+                <h2 class="fs-4 mb-0 text-primary text-center">您的購物車</h2>
+            </div>
+            <div class="cart__item d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center justify-content-md-between w-100">
+                    <img class="cart__img" src="./assets/images/dora/p-8.jpg" alt="stawberry-cake">
+                    <div class="cart__item__info d-lg-flex text-primary">
+                        <div>
+                            <p class="mb-0 fw-light">焦糖馬卡龍</p>
+                            <p class="mb-lg-0 mb-2">NT$450</p>
+                        </div>
+                        <div class="d-flex">
+                            <a href="#" class="align-items-center justify-content-center d-flex text-decoration-none border border-end-0" style="width: 48px; height:48px;">
+                                -
+                            </a>
+                            <a href="#" class="align-items-center justify-content-center d-flex text-decoration-none border border-end-0" style="width: 48px; height:48px;">
+                                2
+                            </a>
+                            <a href="#" class="align-items-center justify-content-center d-flex text-decoration-none border " style="width: 48px; height:48px;">
+                                +
+                            </a>
+                        </div>
+                    </div>
+                    <span class="cart__item__total text-primary total fw-semibold">NT$ 900</span>     
+                    <a href="#">
+                        <img class="d-none d-md-block" src="./assets/images/dora/trash-solid.svg" alt="trash-icon" width="24px" height="24px">
+                    </a>
+                </div>
+            </div>
+            <div class="cart__item d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center justify-content-md-between w-100">
+                    <img class="cart__img" src="./assets/images/dora/p-3.png" alt="cake">
+                    <div class="cart__item__info d-lg-flex text-primary">
+                        <div>
+                            <p class="mb-0 fw-light">焦糖馬卡龍</p>
+                            <p class="mb-lg-0 mb-2">NT$450</p>
+                        </div>
+                        <div class="d-flex">
+                            <a href="#" class="align-items-center justify-content-center d-flex text-decoration-none border border-end-0" style="width: 48px; height:48px;">
+                                -
+                            </a>
+                            <a href="#" class="align-items-center justify-content-center d-flex text-decoration-none border border-end-0" style="width: 48px; height:48px;">
+                                2
+                            </a>
+                            <a href="#" class="align-items-center justify-content-center d-flex text-decoration-none border " style="width: 48px; height:48px;">
+                                +
+                            </a>
+                        </div>
+                    </div>
+                    <span class="cart__item__total text-primary total fw-semibold">NT$ 900</span>     
+                    <a href="#">
+                        <img class="d-none d-md-block" src="./assets/images/dora/trash-solid.svg" alt="trash-icon" width="24px" height="24px">
+                    </a>
+                </div>
+            </div>
+            <div class="cart__item pb-0 d-flex align-items-center justify-content-between border-0">
+                <div class="d-flex flex-wrap align-items-center justify-content-md-between w-100">
+                    <img class="cart__img" src="./assets/images/dora/p-5.png" alt="cake">
+                    <div class="cart__item__info d-lg-flex text-primary">
+                        <div>
+                            <p class="mb-0 fw-light">焦糖馬卡龍</p>
+                            <p class="mb-lg-0 mb-2">NT$450</p>
+                        </div>
+                        <div class="d-flex">
+                            <a href="#" class="align-items-center justify-content-center d-flex text-decoration-none border border-end-0" style="width: 48px; height:48px;">
+                                -
+                            </a>
+                            <a href="#" class="align-items-center justify-content-center d-flex text-decoration-none border border-end-0" style="width: 48px; height:48px;">
+                                2
+                            </a>
+                            <a href="#" class="align-items-center justify-content-center d-flex text-decoration-none border " style="width: 48px; height:48px;">
+                                +
+                            </a>
+                        </div>
+                    </div>
+                    <span class="cart__item__total text-primary total fw-semibold">NT$ 900</span>     
+                    <a href="#">
+                        <img class="d-none d-md-block" src="./assets/images/dora/trash-solid.svg" alt="trash-icon" width="24px" height="24px">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="cart__summary col-12 col-md-4 bg-succes">
+            <div class="cart__summary__title py-3 mx-md-0 mx-5">
+                <h2 class="fs-4 mb-0 text-center">訂單摘要</h2>
+            </div>
+            <div class="cart__summary__totalbar pb-3">
+                <div class="d-flex justify-content-between mb-2 mt-3 mt-md-0">
+                    <span class="fw-light">小計</span>
+                    <span class="fw-light">NT$ 2,700</span>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <span class="fw-light">運費</span>
+                    <span class="fw-light">NT$ 300</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <span class="fw-bold fs-5">總計</span>
+                    <span class="fw-bold fs-5">NT$ 3,000</span>
+                </div>
+            </div>
+            <div>
+                <a href="checkout-1.html" class="d-block py-3 fs-4 text-primary fw-bold btn-success text-center text-decoration-none">結帳</a>
+            </div>
+        </div>
+    </div>
+</div>

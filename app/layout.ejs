@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
-  <body style="height: 10000px;"">
+  <body>
     <nav class="navbar navbar-expand-md navbar-light bg-white py-5">
       <div class="container-md">
-        <img src="./assets/images/dora/logo-all-dark.svg" alt="logo" class="navbar__LogoImg">
+        <a href="index.html"  class="navbar__LogoImg">
+          <img src="./assets/images/dora/logo-all-dark.svg" alt="logo" class="navbar__LogoImg">
+        </a>
         <button class="navbar-toggler p-0 border-0" style="height: 24px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <!-- <span class="navbar-toggler-icon"></span> -->
           <img src="./assets/images/dehaze-24px.png" class="align-top" alt="">
@@ -23,17 +25,30 @@
         </a>
         <div class="d-flex">
           <div class="navbar__link d-flex d-md-flex d-none">
-            <a href="index.html" class="text-decoration-none">首頁</a>
-            <a href="product.html" class="text-decoration-none">甜點</a>
-            <a href="login.html" class="text-decoration-none">登入</a>
+            <a href="index.html" class="text-decoration-none fw-semibold">首頁</a>
+            <a href="product.html" class="text-decoration-none fw-semibold">甜點</a>
+            <a href="login.html" class="text-decoration-none fw-semibold">登入</a>
           </div>
           <a class="navbar__cart py-0 me-0" style="height:24px;" href="cart.html">
             <img src="./assets/images/shopping_cart.png" class="align-top" alt="cart_icon">
           </a>
         </div>
+        <div class="collapse navbar-collapse mt-5" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-center text-primary py-3 bg-dark border-bottom fs-5" aria-current="page" href="index.html">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center text-primary py-3 bg-dark border-bottom fs-5" href="product.html">甜點</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center text-primary py-3 bg-dark border-bottom fs-5" href="login.html">登入</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-
+    <div class="d-md-none" style="height:84px;"></div>
     <%- contents %>
 
     <footer class="footer">
@@ -75,9 +90,9 @@
               <div class="d-flex flex-column justify-content-between">
                 <img src="../assets/images/logotype-sm-dark.svg" alt="" width="171px">
                 <ul class="footer__address ps-0 mb-0">
-                  <li class="list-unstyled"><a class="text-decoration-none" href="tel:07-1234-5678">07-1234-5678</a></li>
-                  <li class="list-unstyled"><a class="text-decoration-none" href="mailto:">sweetaste@email.com</a></li>
-                  <li class="list-unstyled"><address class="text-primary mb-0">高雄市新興區幸福路520號</address></li>
+                  <li class="list-unstyled"><a class="font-Helvetica text-decoration-none" href="tel:07-1234-5678">07-1234-5678</a></li>
+                  <li class="list-unstyled"><a class="font-Helvetica text-decoration-none" href="mailto:">sweetaste@email.com</a></li>
+                  <li class="list-unstyled"><address class="font-Helvetica text-primary mb-0">高雄市新興區幸福路520號</address></li>
                 </ul>
               </div>
               <img class="d-none d-md-block" src="../assets/images/dora/text-sm.svg" alt="" height="219px">

@@ -1,0 +1,111 @@
+---
+title: Ⓢ Sweetaste＊ | 運送
+layout: ./app/layout.ejs
+engine: ejs
+current: check-1
+---
+<div class="container px-0 px-md-5">
+    <div class="row g-0 gx-md-4 justify-content-center flex-md-nowrap">
+        <div class="col-12 col-md-6 checkout">
+            <div class="checkout__main bg-primary">
+                <div class="mb-5 d-flex bg-primary align-items-center justify-content-between">
+                    <h2 class="checkout__title text-white mb-0">運送</h2>
+                    <img class="checkout__img" src="./assets/images/dora/bar_delivery.svg" alt="">
+                </div>
+                <form class="bg-primary" action="">
+                    <div class="d-flex gap-2 mb-3">
+                        <label class="w-100" for="firstName">
+                            <p class="fs-5 mb-2 text-dark fw-semibold">姓氏</p>
+                            <div>
+                                <input class="input" placeholder="王" type="text" id="firstName">
+                            </div>
+                        </label>
+                        <label class="w-100" for="lastName">
+                            <p class="fs-5 mb-2 text-dark fw-semibold">名字</p>
+                            <div>
+                                <input class="input" placeholder="小明" type="text" id="lastName">
+                            </div>
+                        </label>
+                    </div>
+                    <label class="w-100 mb-3" for="phone">
+                        <p class="fs-5 mb-2 text-dark fw-semibold">電話</p>
+                        <div>
+                            <input class="input" placeholder="0912-345-678" type="text" id="phone">
+                        </div>
+                    </label>
+                    <div class="d-flex gap-2 mb-2">
+                        <label class="w-100" for="place">
+                            <p class="fs-5 mb-2 text-dark fw-semibold">地址</p>
+                            <select name="place" id="place" class="select input">
+                                <option value="高雄市">高雄市</option>
+                                <option value="高雄市">台北市</option>
+                            </select>
+                        </label>
+                        <label class="w-100" for="lastPlace">
+                            <p class="fs-5 mb-2 text-dark fw-semibold">&nbsp</p>
+                            <select name="lastPlace" id="lastPlace" class="select input">
+                                <option value="新興區">新興區</option>
+                                <option value="新興區">大安區</option>
+                            </select>
+                        </label>
+                    </div>
+                    <label class="w-100" for="road">
+                        <input class="input" placeholder="幸福路 520 號" type="text" id="road">
+                    </label>
+                </form>
+            </div>
+            <a class="btn-success text-primary fw-semibold fs-3 py-3 d-block text-decoration-none text-center" href="checkout-2.html">下一步</a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-none d-md-block ">
+            <div class="checkout__side">
+                <div class="bg-dark py-3">
+                    <h2 class="fs-3 mb-0 fw-semibold text-center text-secondary">訂單摘要</h2>
+                </div>
+                <div class="checkout__summary border border-dark text-secondary">
+                    <div class="d-flex mb-2 justify-content-between">
+                        <span class="fw-light">小計</span>
+                        <span class="fw-light">NT$ 2,700</span>
+                    </div>
+                    <div class="d-flex mb-3 justify-content-between">
+                        <span class="fw-light">運費</span>
+                        <span class="fw-light">NT$ 300</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="fs-5 fw-semibold">總計</span>
+                        <span class="fs-5 fw-semibold">NT$ 3,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="bg-dark py-3">
+                    <h2 class="fs-3 mb-0 fw-semibold text-center text-secondary">購物清單</h2>
+                </div>
+                <ul class="checkout__list mb-0 border border-dark text-secondary">
+                    <li class="d-flex mb-3">
+                        <img class="checkout__list__img checkout__list__img01" src="./assets/images/dora/p-8.jpg" alt="checkout__list__img01">
+                        <div class="checkout__list__info d-flex flex-column justify-content-center">
+                            <span class="fw-light d-block">焦糖馬卡龍（2）</span>
+                            <span class="fs-5 fw-semibold d-block">NT$ 900</span>
+                        </div>
+                    </li>
+                    <li class="d-flex mb-3">
+                        <img class="checkout__list__img checkout__list__img02" src="./assets/images/dora/p-5.png" alt="checkout__list__img02">
+                        <div class="checkout__list__info d-flex flex-column justify-content-center">
+                            <span class="fw-light d-block">焦糖馬卡龍（2）</span>
+                            <span class="fs-5 fw-semibold d-block">NT$ 900</span>
+                        </div>
+                    </li>
+                    <li class="d-flex">
+                        <img class="checkout__list__img checkout__list__img03" src="./assets/images/dora/p-3.png" alt="checkout__list__img03">
+                        <div class="checkout__list__info d-flex flex-column justify-content-center">
+                            <span class="fw-light d-block">焦糖馬卡龍（2）</span>
+                            <span class="fs-5 fw-semibold d-block">NT$ 900</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
