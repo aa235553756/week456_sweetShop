@@ -5,105 +5,245 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boostrap Index</title>
+    <title>Ⓢ Sweetaste＊ | 首頁</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-md navbar-light bg-white py-5">
+      <div class="container-md">
+        <a href="index.html"  class="navbar__LogoImg">
+          <img src="./assets/images/dora/logo-all-dark.svg" alt="logo" class="navbar__LogoImg">
+        </a>
+        <button class="navbar-toggler p-0 border-0" style="height: 24px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <img src="./assets/images/dehaze-24px.png" class="align-top" alt="">
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <a href="index.html" class="d-md-none" style="width:115px;">
+          <img src="./assets/images/dora/logotype-sm-dark.svg" class="" alt="Logo">
+        </a>
+        <div class="d-flex">
+          <div class="navbar__link d-flex d-md-flex d-none">
+            <a href="index.html" class="text-decoration-none fw-semibold">首頁</a>
+            <a href="product.html" class="text-decoration-none fw-semibold">甜點</a>
+            <a href="login.html" class="text-decoration-none fw-semibold">登入</a>
+          </div>
+          <a class="navbar__cart py-0 me-0" style="height:24px;" href="cart.html">
+            <img src="./assets/images/shopping_cart.png" class="align-top" alt="cart_icon">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse mt-5" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link text-center text-primary py-3 bg-dark border-bottom fs-5" aria-current="page" href="index.html">首頁</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link text-center text-primary py-3 bg-dark border-bottom fs-5" href="product.html">甜點</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link text-center text-primary py-3 bg-dark border-bottom fs-5" href="login.html">登入</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
-
+    <div class="d-md-none" style="height:84px;"></div>
     
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
+<div class="banner container-md">
+  <img src="./assets/images/dora/home_banner.jpg" alt="banner-img" class="banner__img w-100" height="496px">
+  <div class="banner__list justify-content-center">
+
+      <div class="card">
+        <a href="#">
+          <div class="card-wrap">
+            <p class="fs-4 index__list">本日精選</p>
+          </div>
+          <img src="./assets/images/dora/SW02.png" alt="" class="card-img">
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="#">
+          <div class="card-wrap">
+            <p class="fs-4 index__list">人氣推薦</p>
+          </div>
+          <img src="./assets/images/dora/SW05.png" alt="" class="card-img">
+        </a>
+      </div>
+
+
+      <div class="card">
+        <a href="#">
+          <div class="card-wrap">
+            <p class="fs-4 index__list">新品上市</p>
+          </div>
+          <img src="./assets/images/dora/SW03.png" alt="" class="card-img">
+        </a>
+      </div>
+
   </div>
 </div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+<div class="quot1 position-relative">
+  <div class="quot1__wrap bg-dark position-absolute w-100"></div>
+  <div  class="quot1__quotImg--sm">
+    <img src="./assets/images/dora/sm-WhySelect.svg" alt="whySelect">
+  </div>
+  <div class="quot1__mainImg--sm">
+    <img src="./assets/images/dora/SW10.png" alt="desert-img" class="w-100">
+  </div>
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="quot1__mainImg">
+      <img src="./assets/images/dora/SW10.png" alt="desert-img" class="w-100">
+    </div>
+    <p class="text-secondary fw-light">是非成敗轉頭空，滾滾長江東逝水，白樵江渚上，古今多少事，都付笑談中。</p>
+    <p class="text-secondary fw-light">青山依舊在，幾度夕陽紅。慣看秋月春一壺濁酒喜相逢，浪花淘盡英雄。是非轉頭空，滾滾長江東逝水，白髮漁樵江，古今多少事，都付笑談中。</p>
+    <div class="quot1__quotImg align-self-start">
+      <img src="./assets/images/dora/lg-WhySelect.svg" alt="" class="w-100">
+    </div>
+  </div>
+</div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+<div class="quot1 position-relative mb-0">
+  <div class="quot1__wrap bg-dark position-absolute w-100"></div>
+  <div  class="quot1__quotImg--sm">
+    <img src="./assets/images/dora/sm-WhyEat.svg" alt="whySelect">
+  </div>
+  <div class="quot1__mainImg--sm">
+    <img src="./assets/images/dora/SW04.png" alt="desert-img" class="w-100">
+  </div>
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="quot1__mainImg  quot1__mainImg--reverse">
+      <img src="./assets/images/dora/SW04.png" alt="desert-img" class="w-100">
+    </div>
+    <p class="text-secondary fw-light">是非成敗轉頭空，滾滾長江東逝水，白樵江渚上，古今多少事，都付笑談中。</p>
+    <p class="text-secondary fw-light">青山依舊在，幾度夕陽紅。慣看秋月春一壺濁酒喜相逢，浪花淘盡英雄。是非轉頭空，滾滾長江東逝水，白髮漁樵江，古今多少事，都付笑談中。</p>
+    <div class="quot1__quotImg align-self-start">
+      <img src="./assets/images/dora/lg-WhyEat.svg" alt="" class="w-100">
     </div>
   </div>
 </div>
 
 
+<div class="container">
+
+  <div  class="quot1__quotImg--sm">
+    <img src="./assets/images/dora/sm-NoReason.svg" alt="whySelect">
+  </div>
+
+  <div class="quot1__quotImg quot1__quotImg--card mx-auto position-relative">
+    <img src="./assets/images/dora/lg-NoReason.svg" alt="" class="" width="89px">
+  </div>
+
+  <div class="index__list row justify-content-center">
+
+    <div class="col-12 col-sm-8 col-md-6 col-lg-4 ">
+      <div class="card position-relative top-0 ">
+        <div class="todayFeature bg-primary position-absolute">
+          <p  class="fw-semibold">本日精選</p>
+        </div>
+        <img class="favorite__icon position-absolute" src="./assets/images/favorite_border.png" alt="">
+        <img src="./assets/images/p-2.png" alt="" class="card-img-top">
+        <div class="card-body d-flex p-0">
+          <p class="card-text fs-5 text-primary mb-0 text-center border-start border-end py-3 fw-light" style="width:173px;">焦糖馬卡龍</p>
+          <p class="card-text fs-5 fw-bold text-primary px-4 py-3 border-end flex-grow-1 text-center fw-semibold flex-shrink-0">NT$ 450</p>
+        </div>
+        <a href="#" class="addToCart fs-4 py-3 text-center text-decoration-none border fw-semibold">加入購物車</a>
+      </div>
+    </div>
+    
+    <div class="col-12 col-sm-8 col-md-6 col-lg-4 d-none d-md-block">
+      <div class="card">
+        <div class="todayFeature bg-primary position-absolute">
+          <p class="fw-semibold">本日精選</p>
+        </div>
+        <img class="favorite__icon position-absolute" src="./assets/images/favorite_border.png" alt="">
+        <img src="./assets/images/p-5.png" alt="" class="card-img-top">
+        <div class="card-body d-flex p-0">
+          <p class="card-text fs-5 text-primary mb-0 text-center border-start border-end py-3 fw-light" style="width:173px;">焦糖馬卡龍</p>
+          <p class="card-text fs-5 fw-bold text-primary px-4 py-3 border-end flex-grow-1 text-center fw-semibold flex-shrink-0">NT$ 450</p>
+        </div>
+        <a href="#" class="addToCart fs-4 py-3 text-center text-decoration-none border fw-semibold">加入購物車</a>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-8 col-md-6 col-lg-4 d-none d-lg-block">
+      <div class="card">
+        <div class="todayFeature bg-primary position-absolute">
+          <p  class="fw-semibold">本日精選</p>
+        </div>
+        <img class="favorite__icon position-absolute" src="./assets/images/favorite_border.png" alt="">
+        <img src="./assets/images/dora/p-7.jpg" alt="" class="card-img-top">
+        <div class="card-body d-flex p-0">
+          <p class="card-text fs-5 text-primary mb-0 text-center border-start border-end py-3 fw-light" style="width:173px;">焦糖馬卡龍</p>
+          <p class="card-text fs-5 fw-bold text-primary px-4 py-3 border-end flex-grow-1 text-center fw-semibold flex-shrink-0">NT$ 450</p>
+        </div>
+        <a href="#" class="addToCart fs-4 py-3 text-center text-decoration-none border fw-semibold">加入購物車</a>
+      </div>
+    </div>
+
+    
+  </div>
+
+</div>
+
     <footer class="footer">
-      footer
+      <div class="bg-primary py-5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <!-- <div class="col-lg-1 d-lg-block d-none"></div> -->
+            <div class="col-11 col-md-6 col-lg-5">
+              <div class="d-flex align-items-center">
+                <img src="./assets/images/dora/logo-light.svg" alt="" width="40px" height="40px">
+                <p class="footer__quot text-dark mb-0 fs-3">訂閱你我的甜蜜郵件</p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-12 pt-5 pt-md-0">
+              <label for="mail" class="d-flex">
+                
+                <div class="footer__input__mailIcon">
+                  <img class="" src="./assets/images/mail-24px.png" alt="mail-icon">
+                </div>
+
+                <input placeholder="" type="mail" id="mail" class="footer__input border-0 p-0">
+                
+                <div class="footer__input__block bg-success">
+                  <a href="#">
+                    <img src="./assets/images/dora/arrow_forward-24px.png" alt="">
+                  </a>
+                </div>
+              
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container footer__info pb-5">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-12 col-lg-10">
+            <div class="d-flex justify-content-between">
+              <div class="d-flex flex-column justify-content-between">
+                <img src="../assets/images/logotype-sm-dark.svg" alt="" width="171px">
+                <ul class="footer__address ps-0 mb-0">
+                  <li class="list-unstyled"><a class="font-Helvetica text-decoration-none" href="tel:07-1234-5678">07-1234-5678</a></li>
+                  <li class="list-unstyled"><a class="font-Helvetica text-decoration-none" href="mailto:">sweetaste@email.com</a></li>
+                  <li class="list-unstyled"><address class="font-Helvetica text-primary mb-0">高雄市新興區幸福路520號</address></li>
+                </ul>
+              </div>
+              <img class="d-none d-md-block" src="../assets/images/dora/text-sm.svg" alt="" height="219px">
+            </div>
+            <div class="footer__media d-md-flex align-items-end justify-content-between">
+              <ul class="ps-0 mb-4 mb-md-0 d-flex gap-2">
+                <li class="list-unstyled"><a href="#"><img src="./assets/images/ic-line@.svg" alt="line" width="32px"></a></li>
+                <li class="list-unstyled"><a href="#"><img src="./assets/images/ic-facebook.svg" alt="line" width="32px"></a></li>
+              </ul>
+              <p class="text-primary font-Times mb-0">© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>

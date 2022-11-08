@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boostrap Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-white py-5">
+      <div class="container-md">
+        <a href="index.html"  class="navbar__LogoImg">
+          <img src="./assets/images/dora/logo-all-dark.svg" alt="logo" class="navbar__LogoImg">
+        </a>
+        <button class="navbar-toggler p-0 border-0" style="height: 24px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <img src="./assets/images/dehaze-24px.png" class="align-top" alt="">
+        </button>
+        <a href="index.html" class="d-md-none" style="width:115px;">
+          <img src="./assets/images/dora/logotype-sm-dark.svg" class="" alt="Logo">
+        </a>
+        <div class="d-flex">
+          <div class="navbar__link d-flex d-md-flex d-none">
+            <a href="index.html" class="text-decoration-none fw-semibold">首頁</a>
+            <a href="product.html" class="text-decoration-none fw-semibold">甜點</a>
+            <a href="login.html" class="text-decoration-none fw-semibold">登入</a>
+          </div>
+          <a class="navbar__cart py-0 me-0" style="height:24px;" href="cart.html">
+            <img src="./assets/images/shopping_cart.png" class="align-top" alt="cart_icon">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse mt-5" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-center text-primary py-3 bg-dark border-bottom fs-5" aria-current="page" href="index.html">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center text-primary py-3 bg-dark border-bottom fs-5" href="product.html">甜點</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center text-primary py-3 bg-dark border-bottom fs-5" href="login.html">登入</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="d-md-none" style="height:84px;"></div>
+    <div class="container px-0 px-md-5">
+    <div class="row g-0 gx-md-4 justify-content-center flex-md-nowrap">
+        <div class="col-12 col-md-6">
+            <div class="checkout__main bg-dark" style="height: 500px;">
+                <div class="mb-5 d-flex bg-primary align-items-center justify-content-between">
+                    <h2 class="checkout__title text-white mb-0">運送</h2>
+                    <img class="checkout__img" src="./assets/images/dora/bar_delivery.svg" alt="">
+                </div>
+                <form class="bg-primary" style="height: 100px;" action="">
+                    <div class="d-flex gap-3">
+                        <label class="w-100" for="firstName">
+                            <p class="fs-5 mb-2 text-dark fw-semibold">姓氏</p>
+                            <div class="position-relative">
+                                <div class="bg-success position-absolute" style="width: 56px; height: 56px;"></div>
+                                <input class="input input--withIcon" placeholder="王" type="text" id="firstName">
+                            </div>
+                        </label>
+                        <label class="w-100" for="firstName">
+                            <p class="fs-5 mb-2 text-dark fw-semibold">姓氏</p>
+                            <div>
+                                <input class="input" placeholder="王" type="text" id="firstName">
+                            </div>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <a class="btn-success text-primary fw-semibold fs-3 py-3 d-block text-decoration-none text-center" href="checkout-2.html">下一步</a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-none d-md-block ">
+            <div class="checkout__side">
+                <div class="bg-dark py-3">
+                    <h2 class="fs-3 mb-0 fw-semibold text-center text-secondary">訂單摘要</h2>
+                </div>
+                <div class="checkout__summary border border-dark text-secondary">
+                    <div class="d-flex mb-2 justify-content-between">
+                        <span class="fw-light">小計</span>
+                        <span class="fw-light">NT$ 2,700</span>
+                    </div>
+                    <div class="d-flex mb-3 justify-content-between">
+                        <span class="fw-light">運費</span>
+                        <span class="fw-light">NT$ 300</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="fs-5 fw-semibold">總計</span>
+                        <span class="fs-5 fw-semibold">NT$ 3,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="bg-dark py-3">
+                    <h2 class="fs-3 mb-0 fw-semibold text-center text-secondary">購物清單</h2>
+                </div>
+                <ul class="checkout__list mb-0 border border-dark text-secondary">
+                    <li class="d-flex mb-3">
+                        <img class="checkout__list__img checkout__list__img01" src="./assets/images/dora/p-8.jpg" alt="checkout__list__img01">
+                        <div class="checkout__list__info d-flex flex-column justify-content-center">
+                            <span class="fw-light d-block">焦糖馬卡龍（2）</span>
+                            <span class="fs-5 fw-semibold d-block">NT$ 900</span>
+                        </div>
+                    </li>
+                    <li class="d-flex mb-3">
+                        <img class="checkout__list__img checkout__list__img02" src="./assets/images/dora/p-5.png" alt="checkout__list__img02">
+                        <div class="checkout__list__info d-flex flex-column justify-content-center">
+                            <span class="fw-light d-block">焦糖馬卡龍（2）</span>
+                            <span class="fs-5 fw-semibold d-block">NT$ 900</span>
+                        </div>
+                    </li>
+                    <li class="d-flex">
+                        <img class="checkout__list__img checkout__list__img03" src="./assets/images/dora/p-3.png" alt="checkout__list__img03">
+                        <div class="checkout__list__info d-flex flex-column justify-content-center">
+                            <span class="fw-light d-block">焦糖馬卡龍（2）</span>
+                            <span class="fs-5 fw-semibold d-block">NT$ 900</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="footer">
+      <div class="bg-primary py-5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <!-- <div class="col-lg-1 d-lg-block d-none"></div> -->
+            <div class="col-11 col-md-6 col-lg-5">
+              <div class="d-flex align-items-center">
+                <img src="./assets/images/dora/logo-light.svg" alt="" width="40px" height="40px">
+                <p class="footer__quot text-dark mb-0 fs-3">訂閱你我的甜蜜郵件</p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-12 pt-5 pt-md-0">
+              <label for="mail" class="d-flex">
+                
+                <div class="footer__input__mailIcon">
+                  <img class="" src="./assets/images/mail-24px.png" alt="mail-icon">
+                </div>
+
+                <input placeholder="" type="mail" id="mail" class="footer__input border-0 p-0">
+                
+                <div class="footer__input__block bg-success">
+                  <a href="#">
+                    <img src="./assets/images/dora/arrow_forward-24px.png" alt="">
+                  </a>
+                </div>
+              
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container footer__info pb-5">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-12 col-lg-10">
+            <div class="d-flex justify-content-between">
+              <div class="d-flex flex-column justify-content-between">
+                <img src="../assets/images/logotype-sm-dark.svg" alt="" width="171px">
+                <ul class="footer__address ps-0 mb-0">
+                  <li class="list-unstyled"><a class="font-Helvetica text-decoration-none" href="tel:07-1234-5678">07-1234-5678</a></li>
+                  <li class="list-unstyled"><a class="font-Helvetica text-decoration-none" href="mailto:">sweetaste@email.com</a></li>
+                  <li class="list-unstyled"><address class="font-Helvetica text-primary mb-0">高雄市新興區幸福路520號</address></li>
+                </ul>
+              </div>
+              <img class="d-none d-md-block" src="../assets/images/dora/text-sm.svg" alt="" height="219px">
+            </div>
+            <div class="footer__media d-md-flex align-items-end justify-content-between">
+              <ul class="ps-0 mb-4 mb-md-0 d-flex gap-2">
+                <li class="list-unstyled"><a href="#"><img src="./assets/images/ic-line@.svg" alt="line" width="32px"></a></li>
+                <li class="list-unstyled"><a href="#"><img src="./assets/images/ic-facebook.svg" alt="line" width="32px"></a></li>
+              </ul>
+              <p class="text-primary font-Times mb-0">© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
