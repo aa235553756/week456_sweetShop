@@ -12690,7 +12690,7 @@ fieldset:disabled .btn {
   color: #fff;
 }
 
-input {
+input, select {
   border-radius: 0px;
 }
 
@@ -12958,7 +12958,7 @@ input {
 
 .checkout__success {
   height: 460px;
-  background: url(../../../assets/images/dora/payment_success.jpg);
+  background: url(../images/dora/payment_success.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -13476,6 +13476,8 @@ input {
 }
 
 .todayFeature {
+  width: 36px;
+  height: 106px;
   left: 20px;
 }
 
