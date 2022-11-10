@@ -152,7 +152,9 @@ input,select{
 }
 
 .checkout{
-    margin-bottom: -30px;
+    @include media-breakpoint-down(md){
+        margin-bottom: -30px;
+    }
     &__main{
         padding: 30px 40px;
     }
